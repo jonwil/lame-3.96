@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug GTK|Win32">
+      <Configuration>Debug GTK</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release GTK|Win32">
+      <Configuration>Release GTK</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release NASM|Win32">
+      <Configuration>Release NASM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>libmp3lame</ProjectName>
+    <ProjectGuid>{D709ED93-9AF0-42B8-85EC-0DB569E46C9A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'">
+    <OutDir>.\libmp3lame___Win32_Debug_GTK\</OutDir>
+    <IntDir>.\libmp3lame___Win32_Debug_GTK\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'">
+    <OutDir>.\libmp3lame___Win32_Release_GTK\</OutDir>
+    <IntDir>.\libmp3lame___Win32_Release_GTK\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">
+    <OutDir>.\Release_NASM\</OutDir>
+    <IntDir>.\Release_NASM\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../;../mpglib;../include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\libmp3lame_vc6.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions> /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\libmp3lame_vc6.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Release\libmp3lame.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../;../mpglib;../include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_GTK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\libmp3lame___Win32_Debug_GTK\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\libmp3lame___Win32_Debug_GTK\libmp3lame_vc6.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\libmp3lame___Win32_Debug_GTK\</ObjectFileName>
+      <ProgramDataBaseFileName>.\libmp3lame___Win32_Debug_GTK\</ProgramDataBaseFileName>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\libmp3lame___Win32_Debug_GTK\libmp3lame_vc6.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Debug\libmp3lame.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../;../mpglib;../include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\libmp3lame_vc6.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\libmp3lame_vc6.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Debug\libmp3lame.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../;../mpglib;../include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_GTK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\libmp3lame___Win32_Release_GTK\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\libmp3lame___Win32_Release_GTK\libmp3lame_vc6.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\libmp3lame___Win32_Release_GTK\</ObjectFileName>
+      <ProgramDataBaseFileName>.\libmp3lame___Win32_Release_GTK\</ProgramDataBaseFileName>
+      <AdditionalOptions> /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\libmp3lame___Win32_Release_GTK\libmp3lame_vc6.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Release\libmp3lame.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../;../mpglib;../include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_NASM;MMX_choose_table;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release_NASM\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release_NASM\libmp3lame_vc6.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release_NASM\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_NASM\</ProgramDataBaseFileName>
+      <AdditionalOptions> /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release_NASM\libmp3lame_vc6.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Release_NASM\libmp3lame.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitstream.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="encoder.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="fft.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="gain_analysis.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="id3tag.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="lame.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="mpglib_interface.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="newmdct.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="presets.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="psymodel.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="quantize.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="quantize_pvt.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="reservoir.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="set_get.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="tables.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level1</WarningLevel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'">Level1</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level1</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'">Level1</WarningLevel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">Level1</WarningLevel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="takehiro.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="util.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="vbrquantize.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="VbrTag.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="version.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'"> /GAy /QIfdiv /QI0f   /GAy /QIfdiv /QI0f </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\configMS.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\configMS.h ..\config.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Step on %(Filename)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\config.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'">copy ..\configMS.h ..\config.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'">Performing Custom Build Step on %(Filename)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug GTK|Win32'">..\config.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\configMS.h ..\config.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Step on %(Filename)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\config.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'">copy ..\configMS.h ..\config.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'">Performing Custom Build Step on %(Filename)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release GTK|Win32'">..\config.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">copy ..\configMS.h ..\config.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">Performing Custom Build Step on %(Filename)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">..\config.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="bitstream.h" />
+    <ClInclude Include="encoder.h" />
+    <ClInclude Include="fft.h" />
+    <ClInclude Include="gain_analysis.h" />
+    <ClInclude Include="id3tag.h" />
+    <ClInclude Include="l3side.h" />
+    <ClInclude Include="lame-analysis.h" />
+    <ClInclude Include="lameerror.h" />
+    <ClInclude Include="lame_global_flags.h" />
+    <ClInclude Include="machine.h" />
+    <ClInclude Include="newmdct.h" />
+    <ClInclude Include="psymodel.h" />
+    <ClInclude Include="quantize.h" />
+    <ClInclude Include="quantize_pvt.h" />
+    <ClInclude Include="reservoir.h" />
+    <ClInclude Include="set_get.h" />
+    <ClInclude Include="tables.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="vbrquantize.h" />
+    <ClInclude Include="VbrTag.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="i386\choose_table.nas">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">nasmw -f win32 -i %(RootDir)%(Directory)/ -DWIN32 %(FullPath) -o   $(OutDir)%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">Assembling %(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">$(OutDir)/$(InputName).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="i386\cpu_feat.nas">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">nasmw -f win32 -i %(RootDir)%(Directory)/ -DWIN32 %(FullPath) -o   $(OutDir)%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">Assembling %(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">$(OutDir)/$(InputName).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="i386\fft.nas">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="i386\fft3dn.nas">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">nasmw -f win32 -i %(RootDir)%(Directory)/ -DWIN32 %(FullPath) -o   $(OutDir)%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">Assembling %(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">$(OutDir)/$(InputName).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="i386\fftfpu.nas">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="i386\fftsse.nas">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="i386\ffttbl.nas">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="i386\scalar.nas">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release NASM|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ec88b9bb-894e-471f-a746-44736391befa}</UniqueIdentifier>
+      <Extensions>c;cpp</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{5c673a1d-23b7-47e4-9d15-fb6477aa7bb5}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{fcb64db8-fa63-4f41-bda3-9adf6223c7d9}</UniqueIdentifier>
+      <Extensions>rc</Extensions>
+    </Filter>
+    <Filter Include="Install">
+      <UniqueIdentifier>{6409b3c8-d887-4789-8b60-4feed7147732}</UniqueIdentifier>
+      <Extensions>inf;acm</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ACM.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ACMStream.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="AEncodeProperties.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeStream.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ACM.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ACMStream.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="adebug.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="AEncodeProperties.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeStream.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="acm.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="lame.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="lameACM.def">
+      <Filter>Source</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LameACM.inf">
+      <Filter>Install</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TODO" />
+  </ItemGroup>
+</Project>

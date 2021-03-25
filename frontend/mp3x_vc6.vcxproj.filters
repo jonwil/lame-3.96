@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{863a00c1-db0e-4e4c-a719-c6c3828094ba}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{b75bfc8e-4e9f-4414-b7a5-f3f789076ff2}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="brhist.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="get_audio.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="gpkplotting.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="gtkanal.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="lametime.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3x.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="portableio.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="timestatus.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="brhist.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\configMS.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="get_audio.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="gpkplotting.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="lametime.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="parse.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="portableio.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="timestatus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\README.WINGTK" />
+  </ItemGroup>
+</Project>
